@@ -1,0 +1,83 @@
+.sidebar {
+  width: 200px;
+  background-color: #1a202c;
+  color: white;
+  /* min-height: 80vh; */
+  position: relative;
+  transition: width 0.4s ease;
+  /* overflow-x: scroll; */
+}
+
+.sidebar.collapsed {
+  width: 25px;
+}
+
+.logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo img {
+  max-width: 140px;
+  margin-bottom: 15px;
+}
+.sidebar.collapsed .icon-logo {
+  display: none;
+}
+.logo h2 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 95vh;
+  overflow-y: scroll;
+}
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.menu li:hover {
+  background-color: #2d3748;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  background-color: #0f8bfd;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar.collapsed .menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sidebar.collapsed .logo h2 {
+  display: none;
+}

@@ -1,0 +1,133 @@
+/* Details Section */
+.left-home-container-details {
+  margin-bottom: 20px;
+}
+
+.left-home-container-detail-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-home-container-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-home-container-detail-header span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.left-home-container-detail-menu {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.left-home-container-detail-value {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.left-home-container-progress {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.left-home-container-progress-bar {
+  width: 0;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+/* Add Button */
+.left-home-container-add-btn {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px dashed #bbb;
+  padding: 8px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.left-home-container-add-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Action Buttons */
+.left-home-container-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-home-container-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-home-container-btn.primary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.left-home-container-btn.secondary {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.left-home-container-btn:hover.primary {
+  background-color: #1976d2;
+}
+
+.left-home-container-btn:hover.secondary {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .left-home-container {
+    padding: 10px;
+  }
+
+  .left-home-container-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .left-home-container-user-info h3 {
+    font-size: 16px;
+  }
+
+  .left-home-container-detail-item {
+    padding: 8px 0;
+  }
+
+  .left-home-container-btn {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+.dataitem-row-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
